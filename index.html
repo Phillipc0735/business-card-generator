@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+          
+              $('Button').click(function() {
+                 var business = $("#business").val()
+            var name = $("#name").val()
+            var email = $("#email").val()
+            var slogan = $("#slogan").val()
+            var background = $("#background").val()
+            
+            var businesscard = business + ". " + '<br/>' + slogan + '<br/>' + email + '<br/>' + " Owned By: " + name;
+            $('p').html(businesscard);
+            $('*').css('background-color', background)
+            
+            $('div').empty();
+              });
+           
+        });
+        
+        
+        
+      
+        
+    </script>
+  </head>
+  <body>
+    <div>
+  Business Name: <input placeholder = "Wumbo Inc" id="business"><br>
+  Name: <input placeholder = "Patrick Star" id="name"><br>
+  Email: <input placeholder = "PatrickStar@Wumbology101.org" id="email"><br>
+  Slogan: <input placeholder = "Wumbology? The Study of Wumbo?" id="slogan"><br>
+  Background: <input placeholder = "Pink" id="background"><br>
+  <button> Make Your Business Card!</button>
+    </div>
+  <p></p>
+  </body>
+</html>
